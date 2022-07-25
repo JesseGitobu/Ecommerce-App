@@ -180,7 +180,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     Widget registerButton = InkWell(
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (_) => MainScreen()));
+            .push(MaterialPageRoute(builder: (_) => const MainScreen()));
       },
       child: Container(
         width: 160,

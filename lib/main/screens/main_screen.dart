@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/main/background_colors/background_color.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ecommerce_ui/main/widgets/deals_header_scrollview.dart';
+import 'package:ecommerce_ui/main/widgets/deal_cards.dart';
+import 'package:ecommerce_ui/main/widgets/deals_sofa.dart';
+import 'package:ecommerce_ui/main/widgets/deals_kitchen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -72,7 +76,58 @@ class _MainScreenState extends State<MainScreen> {
             children: [
               background,
               Column(
-                children: [headerWidget],
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  headerWidget,
+                  const DealsHeaderScrollview(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const DealCards(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Buid your Sitto'),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const DealsSofa(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Kitchen Shopping'),
+                  ),
+                  const DealsKitchen(),
+                  const DealsHeaderScrollview(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const DealCards(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Buid your Sitto'),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const DealsSofa(),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text('Kitchen Shopping'),
+                  ),
+                  const DealsKitchen()
+                ],
               ),
             ],
           ),
